@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     //Begins the Game
     public void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SampleScene");
     }
 
     //Opens the options menu
