@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
         if (go.tag == "Collectible")
         {
             isPoweredUp = true;
+            Score += 300;
             Destroy(go);
         }
 
