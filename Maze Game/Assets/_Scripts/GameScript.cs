@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameScript : MonoBehaviour
 {
@@ -21,5 +22,15 @@ public class GameScript : MonoBehaviour
     void Update()
     {
         ScoreDisplay.text = "Score: " + Player.S.Score;
+    }
+
+    public void RestartGame(float delay)
+    {
+        Invoke("Restart", delay);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }
