@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     [Header("Set in Inspector")]
     public float walkSpeed = 30;
+    public GameObject playerModel;
 
     [Header("Set Dynamically")]
     public int Score = 0;
@@ -46,7 +47,6 @@ public class Player : MonoBehaviour
             pos.x -= walkSpeed * Time.deltaTime;
             transform.position = pos;
         }
-
     }
 
     void OnTriggerEnter(Collider other)
@@ -59,6 +59,12 @@ public class Player : MonoBehaviour
             isPoweredUp = true;
             Score += 300;
             Destroy(go);
+        }
+        else if(go.tag == "Enemy")
+        {
+            Destroy(playerModel);
+            isPoweredUp = false;
+            GameScript.S.RestartGame(3);
         }
 
         print("Collided with object: " + go.name);
