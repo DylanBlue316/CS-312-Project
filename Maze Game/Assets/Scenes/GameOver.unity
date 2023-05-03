@@ -288,7 +288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 227772858}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824145957}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: Options
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &227772858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,7 +421,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 365450195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824145957}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &365450195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +618,7 @@ GameObject:
   - component: {fileID: 824145955}
   - component: {fileID: 824145954}
   - component: {fileID: 824145953}
+  - component: {fileID: 824145957}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -682,6 +707,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &824145957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824145952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4caaa770260fd48ab7ac17c93a3345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &844793794
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,7 +801,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 844793797}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824145957}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &844793797
 MonoBehaviour:
   m_ObjectHideFlags: 0
